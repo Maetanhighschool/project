@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>상품 소개 페이지</title>
   <style>
     body {
@@ -10,37 +11,44 @@
       background-size: 65%;
       background-position: center top;
       background-origin: content-box;
+      height: 100vh;
+      margin: 0;
+      position: relative;
     }
 
-    #container {
+    #image-row img {
       position: absolute;
-      display: flex;
-      flex-direction: column; /* 이미지를 세로로 정렬 */
-      align-items: flex-end; /* 이미지를 모두 오른쪽 정렬 */
-      gap: 10px; /* 이미지 간의 간격 */
+      width: 17%; /* 이미지 크기를 17%로 설정 */
     }
-    .img1 {
-      bottom: 10px; /* 화면의 아래에서 10px 띄움 */
-      right: 10%; /* 화면의 오른쪽에서 10px 띄움 */
+
+    #start-img {
+      right: 17.5%; /* 오른쪽에서 10% */
+      bottom: 50%; /* 아래에서 50% */
     }
-    .img2 {
-      bottom: 25px; /* 화면의 아래에서 10px 띄움 */
-      right: 10%; /* 화면의 오른쪽에서 10px 띄움 */
+
+    #introduce-img {
+      right: 17.5%; /* 오른쪽에서 10% */
+      bottom: 30%; /* 아래에서 30% */
     }
-    .img3 {
-      bottom: 50px; /* 화면의 아래에서 10px 띄움 */
-      right: 10%; /* 화면의 오른쪽에서 10px 띄움 */
+
+    #ending-img {
+      right: 17.5%; /* 오른쪽에서 10% */
+      bottom: 10%; /* 아래에서 10% */
     }
-    img {
-      width: 17%; /* 이미지 크기 */
+    #ing {
+      width : 20%;
     }
   </style>
 </head>
 <body>
 
-  <div id="container">
-    <a href="https://www.youtube.com/watch?v=suxUmEfxGBY"><img src="images/start.png" alt="레드향"></a>
-    <a href="web_2.html"><img src="images/introduce.png" alt="레드향"></a>
+  <div id="image-row">
+    <a href="https://www.youtube.com/watch?v=suxUmEfxGBY">
+      <img src="images/start.png" alt="레드향" id="start-img">
+    </a>
+    <a href="web_2.html">
+      <img src="images/introduce.png" alt="레드향" id="introduce-img">
+    </a>
     <img src="images/ending.png" alt="레드향" id="ending-img">
   </div>
 
