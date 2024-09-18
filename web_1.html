@@ -3,12 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <title>유령아동 프로젝트</title>
+  <style>
+    body {
+      background: url('images/background_chk.png');
+      background-repeat: no-repeat;
+      background-size: 65%;
+      background-position: center top;
+      background-origin: content-box;
+    }
+
+    #container {
+      position: absolute;
+      bottom: 2%; /* 화면의 아래에서 10px 띄움 */
+      right: 16%; /* 화면의 오른쪽에서 10px 띄움 */
+      display: flex;
+      flex-direction: column; /* 이미지를 세로로 정렬 */
+      align-items: flex-end; /* 이미지를 오른쪽으로 정렬 */
+      gap: 5px; /* 이미지 간격을 좁게 설정 */
+    }
+
+    img {
+      width: 27%;
+    }
+    
+  </style>
 </head>
 <body>
+
   <div id="container">
-    <a href="https://www.youtube.com/watch?v=suxUmEfxGBY"><img src="images/start.png" alt="레드향" style="float:10%; width:17%"></a>
-    <a href="web_2.html"><img src="images/introduce.png" alt="레드향" width="17%"></a>
-    <img src="images/ending.png" alt="레드향" width="17%" id="ending-img">
+    <a href="https://www.youtube.com/watch?v=suxUmEfxGBY"><img src="images/start.png" alt="시작"></a>
+    <a href="web_2.html"><img src="images/introduce.png" alt="소개"></a>
+    <img src="images/ending.png" alt="엔딩" id="ending-img">
   </div>
 
   <script>
@@ -25,15 +50,5 @@
       else if (userInput === "장화홍련") window.location.href = "https://youtu.be/gc8tDaui008";
     });
   </script>
-
-  <style>
-    body {
-      background: url('images/background1.png');
-      background-repeat: no-repeat;
-      background-size: 65%;
-      background-position: center top;
-      background-origin: content-box;
-    }
-  </style>
 </body>
 </html>
